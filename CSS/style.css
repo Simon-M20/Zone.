@@ -1,0 +1,376 @@
+::-webkit-scrollbar {
+    scroll-behavior: smooth;
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(34, 34, 34, 0.85);
+    scroll-behavior: smooth;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    background: #22245d;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:active{
+    background-color: #325eed;
+    border-radius: 20px;
+}
+
+body {
+    /* background-color: #18192d; */
+    background-image: linear-gradient(120deg, #18192d 34%, #272968 76%);
+    color: #fff;
+}
+
+.logo {
+    z-index: 999;
+}
+
+.menu {
+    z-index: 997;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #272968;
+    height: 100vh;
+    width: 100%;
+    transition: all .3s ease-out;
+    transform: 
+        translate(-100%, -100%);
+}
+
+.menu.is-active {
+    transform: 
+        translate(0, 0);
+}
+
+.menu ul {
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu ul li {
+    font-size: 18px;
+    margin: 17px 0;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.menu ul li:hover {
+    font-weight: bold;
+    color: #325eed;
+}
+
+.close-btn {
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.title {
+    background: -webkit-linear-gradient(180deg, #d544ee 50%, #5b5be9);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 76px;
+}
+
+.joinButton {
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 15px 35px;
+    background-color: #325eed;
+    background-image: linear-gradient(90deg, #325eed 0%, #7955ec 100%);
+    transition: all .2s ease-in;
+}
+
+.joinButton:hover {
+    transform: scale(.9);
+    font-weight: bold;
+    box-shadow: #22245d 0px 48px 100px 0px;
+}
+
+.serviceCard {
+    border-radius: 20px;
+    width: 320px;
+    min-height: 300px;
+    max-height: 320px;
+    padding: 2rem 1rem;
+    margin: .9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all .2s ease-in;
+
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, 0.01));
+    border-width: 1px;
+    border-top-color: rgba(121, 85, 236, 0.2);
+    border-left-color: rgba(121, 85, 236, .3);
+    border-bottom-color: rgba(121, 85, 236, .2);
+    border-right-color: rgba(121, 85, 236, .3);
+    filter: drop-shadow(0 1px 24px rgba(0, 0, 0, 1));
+}
+
+.serviceCard:hover {
+    transform: 
+        translateY(-10px)
+        scale(1.1);
+}
+
+.serviceCard > img {
+    width: 4.5rem;
+    height: 4.5rem;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.serviceCard img.order {
+    background: rgb(125,113,205);
+    background: linear-gradient(128deg, rgba(125,113,205,1) 40%, rgba(97,80,174,1) 100%);
+    box-shadow: rgba(121, 85, 236, 0.16) 0px 3px 6px, rgba(121, 85, 236, 0.23) 0px 3px 6px;
+    /* box-shadow: rgba(121, 85, 236, 0.3) 0px 8px 24px; */
+}
+
+.serviceCard img.social {
+    background: rgb(200,108,133);
+    background: linear-gradient(128deg, rgba(200,108,133,1) 40%, rgba(154,59,89,1) 100%);
+    box-shadow: rgba(154, 59, 89, 0.16) 0px 3px 6px, rgba(154, 59, 89, 0.23) 0px 3px 6px;
+}
+
+.serviceCard img.crypto {
+    background: rgb(122,204,229);
+    background: linear-gradient(128deg, rgba(122,204,229,1) 40%, rgba(74,153,191,1) 100%);
+    box-shadow: rgba(74, 153, 191, 0.16) 0px 3px 6px, rgba(74, 153, 191, 0.23) 0px 3px 6px;
+}
+
+.serviceCard img.trading {
+    background: rgb(135,227,183);
+    background: linear-gradient(128deg, rgba(135,227,183,1) 40%, rgba(62,158,109,1) 100%);
+    box-shadow: rgba(62, 158, 109, 0.16) 0px 3px 6px, rgba(62, 158, 109, 0.23) 0px 3px 6px;
+}
+
+.serviceCard img.statistics {
+    background: rgb(180,114,203);
+    background: linear-gradient(128deg, rgba(180,114,203,1) 40%, rgba(148,55,135,1) 100%);
+    box-shadow: rgba(148, 55, 135, 0.16) 0px 3px 6px, rgba(148, 55, 135, 0.23) 0px 3px 6px;
+}
+
+.serviceCard img.price {
+    background: rgb(128,126,233);
+    background: linear-gradient(128deg, rgba(128,126,233,1) 40%, rgba(60,66,174,1) 100%);
+    box-shadow: rgba(60, 66, 174, 0.16) 0px 3px 6px, rgba(60, 66, 174, 0.23) 0px 3px 6px;
+}
+
+.moreButton {
+    cursor: pointer;
+    margin: 24px 0;
+    border-radius: 4px;
+    padding: 7px 20px;
+    background-color: #325eed;
+    background-image: linear-gradient(90deg, #325eed 0%, rgb(121, 85, 236) 100%);
+    transition: all .2s ease-in;
+}
+
+.moreButton:hover {
+    transform: scale(.9);
+    font-weight: bold;
+    box-shadow: #22245d 0px 48px 100px 0px;
+}
+
+.teamCard {
+    border-radius: 20px;
+    width: 240px;
+    min-height: 240px;
+    max-height: 300px;
+    padding: 1.5rem 1rem;
+    margin: .9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all .2s ease-in;
+
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, 0.01));
+    border-width: 1px;
+    border-top-color: rgba(121, 85, 236, 0.2);
+    border-left-color: rgba(121, 85, 236, .3);
+    border-bottom-color: rgba(121, 85, 236, .2);
+    border-right-color: rgba(121, 85, 236, .3);
+    filter: drop-shadow(0 1px 24px rgba(0, 0, 0, 1));
+}
+
+.teamCard:hover {
+    transform: 
+        translateY(-10px)
+        scale(.9);
+}
+
+.teamCard > img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.susbcribeForm {
+    border-radius: 20px;
+    width: 100%;
+    min-height: 240px;
+    max-height: 500px;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all .2s ease-in;
+
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, 0.01));
+    border-width: 1px;
+    border-top-color: rgba(121, 85, 236, 0.2);
+    border-left-color: rgba(121, 85, 236, .3);
+    border-bottom-color: rgba(121, 85, 236, .2);
+    border-right-color: rgba(121, 85, 236, .3);
+    filter: drop-shadow(0 1px 24px rgba(0, 0, 0, 1));
+}
+
+.susbcribeForm div {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.susbcribeForm input {
+    position: relative;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    border-radius: 50px;
+    padding: .7rem 1.2rem;
+    margin-top: 1rem;
+
+    background-image: linear-gradient(120deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, 0.01));
+    border-width: 1px;
+    border-top-color: rgba(121, 85, 236, 0.2);
+    border-left-color: rgba(121, 85, 236, .3);
+    border-bottom-color: rgba(121, 85, 236, .2);
+    border-right-color: rgba(121, 85, 236, .3);
+    filter: drop-shadow(0 1px 24px rgba(0, 0, 0, 1));
+}
+
+.susbcribeForm button {
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 10px 34px;
+    background-color: #325eed;
+    background-image: linear-gradient(90deg, #325eed 0%, rgb(121, 85, 236) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 1rem;
+    right: 0;
+    top: 0;
+    transition: all .2s ease-in;
+}
+
+.susbcribeForm button:hover {
+    transform: scale(.9);
+    font-weight: bold;
+    box-shadow: #22245d 0px 48px 100px 0px;
+}
+
+.close-btn, .menu-btn {
+    cursor: pointer;
+    display: block;
+}
+
+
+@media only screen and (min-width: 770px) {
+    .menu {
+        background-color: transparent;
+        position: relative;
+        width: auto;
+        height: auto;
+        transform: 
+            scale(1)
+            translate(0, 0);
+    }
+
+    .menu ul {
+        padding: 0;
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu ul li {
+        margin: 7px 24px;
+        font-size: 16px;
+    }
+
+    .menu ul li:hover {
+        font-weight: bold;
+        color: #fff;
+        /* box-shadow: #325eed 0px 48px 100px 0px; */
+    }    
+
+    .menu ul li:nth-child(7) {
+        cursor: pointer;
+        margin: 0 0 0 35px;
+        border-radius: 4px;
+        padding: 7px 20px;
+        background-color: #325eed;
+        background-image: linear-gradient(90deg, #325eed 0%, rgb(121, 85, 236) 100%);
+        transition: all .2s ease-in;
+    }
+
+    .menu ul li:nth-child(7):hover {
+        transform: scale(.9);
+        font-weight: bold;
+        box-shadow: #22245d 0px 48px 100px 0px;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+
+    .susbcribeForm div {
+        width: 60%;
+        position: relative;
+    }
+
+    .susbcribeForm button {
+        cursor: pointer;
+        border-radius: 50px;
+        padding: 10px 24px;
+        background-color: #325eed;
+        background-image: linear-gradient(90deg, #325eed 0%, rgb(121, 85, 236) 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 8px;
+        top: 4px;
+    }
+
+    .close-btn, .menu-btn {
+        display: none;
+    }
+
+
+
+}
